@@ -1,0 +1,23 @@
+{
+    "key": "ui_options_page_66753e9f5e70f",
+    "title": "Interactieve kaart",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Interactieve kaart",
+    "menu_slug": "interactieve-kaart",
+    "parent_slug": "index.php",
+    "advanced_configuration": false,
+    "icon_url": "",
+    "menu_title": "",
+    "position": null,
+    "redirect": false,
+    "description": "",
+    "menu_icon": [],
+    "update_button": "Updaten",
+    "updated_message": "Opties bijgewerkt",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": false,
+    "modified": 1718959775
+}
