@@ -41,7 +41,7 @@ $hp_ph_link = $hp_ph_group['page_header_knop'];
       <div class="col-right">
         <div class="content">
           <div class="title" id="pageheader-title">
-            <h1 id="text-change" data-default="Kunst in C">Kunst in C</h1>
+            <h1 id="text-change" data-default="Kunst in C">Kunst in abCdef</h1>
             <p id="text-desc" data-desc="<?php echo wp_kses_post($introteksten_group['introtekst_standaard']);  ?>"><?php echo strip_tags($introteksten_group['introtekst_standaard']);  ?></p>
           </div>
           <div class="button-wrapper">

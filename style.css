@@ -1,9 +1,14 @@
+/*
+	Theme Name: Kunst in C
+	Author: Hogeschool van Amsterdam | CMD Students & FDND Students
+	Description: A website for Stichting Kunst in C
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Sen:wght@400..800&display=swap');
 
-/* Theme Name: Kunst in C Theme Theme URI: https://kunstinc.nl Description: A website for "stichting kunst in c" Author: Hogeschool van Amsterdam | CMD Students Version: 1.0 */
 * {
 	box-sizing: border-box;
 	margin: 0;
