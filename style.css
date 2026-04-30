@@ -802,7 +802,7 @@ header nav .mobile-menu {
 }
 
  .marker svg circle:nth-of-type(1), .marker svg path#Path_150{
-	fill: rgb(35, 35, 35);
+	fill: black;
  }
 
  .marker.animation svg circle:nth-of-type(1), .marker.animation svg path#Path_150{
@@ -1401,6 +1401,7 @@ section.route-maps .route-card .background-gradient {
 
 	.col-right.gallery.one-image img {
 		width: 100%;
+		border-radius: 5px;
 	}
 
 	.col-right.gallery.two-images {
@@ -1415,6 +1416,7 @@ section.route-maps .route-card .background-gradient {
 		position: relative;
 		top: 0;
 		object-fit: cover;
+		border-radius: 5px;
 	}
 
 	.col-right.gallery.two-images img:nth-of-type(2) {
@@ -1426,37 +1428,32 @@ section.route-maps .route-card .background-gradient {
 		position: relative;
 	}
 
-	img {
+	.col-right.gallery.three-images img {
 		width: 100%;
 		border-radius: 5px;
-	}
-
-	img:nth-of-type(1) {
-		width: 50%;
-		/* height: 200px; */
 		object-fit: cover;
 		object-position: top;
 	}
 
-	img:nth-of-type(2) {
+	.col-right.gallery.three-images img:nth-of-type(1) {
+		width: 50%;
+	}
+
+	.col-right.gallery.three-images img:nth-of-type(2) {
 		position: absolute;
 		right: 0;
 		top: 150px;
 		transform: translateY(-30%);
 		width: 60%;
 		height: 350px;
-		object-fit: cover;
-		object-position: top;
 	}
 
-	img:nth-of-type(3) {
-		width: 50%;
-		height: 200px;
-		object-fit: cover;
-		object-position: top;
+	.col-right.gallery.three-images img:nth-of-type(3) {
 		position: absolute;
 		top: 240px;
 		left: 0;
+		width: 50%;
+		height: 200px;
 	}
 }
 
