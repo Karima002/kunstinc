@@ -21,12 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
     L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
-
+    
     const pane = map.createPane("fixed", document.getElementById("map"));
 
     // Template SVG icon
     const svgIcon = `
-   ;
+    <svg width="31" height="48" viewBox="0 0 31 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.3137 47.1415L2.08795 22.5165L28.0675 22.2688L15.3137 47.1415Z" fill="black"/>
+        <rect width="30" height="30" rx="15" fill="black"/>
+        <rect x="6" y="5" width="18" height="18" rx="9" fill="white"/>
+    </svg>`;
 
     // Create new div icon with SVG
     const newIcon = L.divIcon({
