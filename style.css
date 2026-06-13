@@ -819,7 +819,7 @@ header nav .mobile-menu {
 	border-radius: 10px;
 	display: none;
 	width: 350px;
-	box-shadow: rgba(0, 0, 0, 0.273) 0 0 10px;
+	box-shadow: #4E1822 .5em .5em;
 	z-index: 99999;
 }
 
