@@ -814,7 +814,7 @@ header nav .mobile-menu {
 	position: fixed;
 	bottom: 15px;
 	right: 15px;
-	height: 50vh;
+	height: 46vh;
 	padding: 1rem;
 	border-radius: 10px;
 	display: none;
@@ -831,8 +831,9 @@ header nav .mobile-menu {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .5fr 1fr;
+	grid-template-rows: .5fr 2fr;
 	column-gap: 2em;
+	row-gap: 1em;
 }
 
 .route-detail-window section ul {
@@ -849,13 +850,14 @@ header nav .mobile-menu {
 	width: 100%;
 	border-radius: 10px;
 	object-fit: cover;
-	/* height: 50%; */
+	height: 100%;
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
 
 .route-detail-window section h2 {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
+	color: var(--kunst-in-c-rood);
 	font-style: italic;
 	font-weight: 700;
 	font-family: var(--kunstwerk-titel);
@@ -905,13 +907,15 @@ header nav .mobile-menu {
 }
 
 .route-detail-window section div a:nth-of-type(2) {
-	background-color: var(--kunst-in-c-rood);
+	background-color: var(--kunst-in-c-white);
+	color: var(--kunst-in-c-rood);
+	border: var(--kunst-in-c-rood) .1em solid;
 }
 
 .route-detail-window section div a:nth-of-type(2):hover {
-	background-color: #fff;
+	background-color: var(--kunst-in-c-rood);
 	border-color: var(--kunst-in-c-rood);
-	color: var(--kunst-in-c-rood);
+	color: var(--kunst-in-c-wit);
 }
 
 .route-detail-window nav {
