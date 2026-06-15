@@ -18,22 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Used to load and display tile layers on the map
     // Most tile servers require attribution, which you can set under `Layer`
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
-
+    
     const pane = map.createPane("fixed", document.getElementById("map"));
 
     // Template SVG icon
     const svgIcon = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="47.088" height="69.48" viewBox="0 0 47.088 69.48">
-  <g id="Group_94" data-name="Group 94" transform="translate(-938.998 -471)">
-    <circle id="Ellipse_13" data-name="Ellipse 13" cx="23.5" cy="23.5" r="23.5" transform="translate(939 471)" fill="#e30813"/>
-    <path id="Path_150" data-name="Path 150" d="M9425-17576.711h47.086s-.205,11.885-9.334,19.609-14.429,25.582-14.429,25.582-4.3-18.027-14-25.582S9425-17576.711,9425-17576.711Z" transform="translate(-8486 18072)" fill="#e30813"/>
-    <circle id="Ellipse_14" data-name="Ellipse 14" cx="12" cy="12" r="12" transform="translate(951 483)" fill="#fff"/>
-  </g>
-</svg>
-    `;
+    <svg width="31" height="48" viewBox="0 0 31 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.3137 47.1415L2.08795 22.5165L28.0675 22.2688L15.3137 47.1415Z" fill="black"/>
+        <rect width="30" height="30" rx="15" fill="black"/>
+        <rect x="6" y="5" width="18" height="18" rx="9" fill="white"/>
+    </svg>`;
 
     // Create new div icon with SVG
     const newIcon = L.divIcon({
