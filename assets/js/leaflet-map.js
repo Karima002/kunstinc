@@ -77,20 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
             currentMarkerIndex = i;
             showPopup(marker);
             fitBoundsPadding(marker);
-
-            const latlng = marker.getLatLng();
-            const point = map.latLngToContainerPoint(latlng);
-
-            popup.style.display = "flex";
-
-            const popupWidth = popup.offsetWidth;
-            const popupHeight = popup.offsetHeight;
-
-            const offsetX = 5; 
-            const offsetY = -popupHeight / 2;
-
-            popup.style.left = (point.x + 2) + "px";
-            popup.style.top = (point.y - popup.offsetHeight / 2) + "px";
+            popup.classList.add('show-popup');
+            // popup.id = marker.data.title;
+            popup.style.display = "flex"; // TO DO: Remove this line
         });
     }
 
