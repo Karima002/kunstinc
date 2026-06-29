@@ -798,16 +798,17 @@ header nav .mobile-menu {
 
 .animation svg {
 	fill: red;
-	transform: translate(-3px, 0px);
+	transform: translate(4px, 2px);
 }
 
  .marker svg circle:nth-of-type(1), .marker svg path#Path_150{
 	fill: black;
  }
 
- .marker.animation svg circle:nth-of-type(1), .marker.animation svg path#Path_150{
-	fill: var(--kunst-in-c-rood);
- }
+.marker.animation svg path:first-of-type,
+.marker.animation svg rect:first-of-type {
+    fill: var(--kunst-in-c-rood);
+}
 
 .route-detail-window {
 	background-color: var(--kunst-in-c-wit);
