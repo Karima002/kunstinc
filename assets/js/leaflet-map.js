@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Config map
     const config = {
         minZoom: 13,
-        maxZoom: 14,
+        maxZoom: 16,
     };
     // Magnification with which the map will start
     const zoom = 14;
@@ -77,20 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
             currentMarkerIndex = i;
             showPopup(marker);
             fitBoundsPadding(marker);
-
-            const latlng = marker.getLatLng();
-            const point = map.latLngToContainerPoint(latlng);
-
-            popup.style.display = "flex";
-
-            const popupWidth = popup.offsetWidth;
-            const popupHeight = popup.offsetHeight;
-
-            const offsetX = 5; 
-            const offsetY = -popupHeight / 2;
-
-            popup.style.left = (point.x + 2) + "px";
-            popup.style.top = (point.y - popup.offsetHeight / 2) + "px";
+            popup.classList.add('show-popup');
+            // popup.id = marker.data.title;
+            popup.style.display = "flex"; // TO DO: Remove this line
         });
     }
 
@@ -102,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popupDetail.href = marker.data.knop_detail;
         popup.classList.remove('popup-hidden');
         // popup.id = marker.data.title;
-        map.setView(marker.getLatLng(), zoom);
+        map.panTo(marker.getLatLng());
     }
 
     prevButton.addEventListener('click', (e) => {
@@ -175,6 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Back to default position
-        map.setView([lat, lng], zoom);
+        map.panTo([lat, lng]);
     }
 });
