@@ -822,6 +822,7 @@ header nav .mobile-menu {
 	width: 600px;
 	box-shadow: #4E1822 .5em .5em;
 	z-index: 99999;
+	margin-bottom: 1em;
 }
 
 .route-detail-window section {
