@@ -647,7 +647,7 @@ header nav ul {
 	padding: 0;
 	margin: 0;
 	padding: 1.5em 2em;
-	border-radius: 50px;
+	border-radius: 10px;
 	height: fit-content;
 	margin-right: 50px;
 	margin-top: -10px;
@@ -893,7 +893,7 @@ header nav .mobile-menu {
 	color: white;
 	min-width: 100%;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 10px;
 	border: 2px transparent solid;
 	transition: 0.3s;
 }
@@ -994,7 +994,7 @@ section.route-maps .route-card {
 	text-decoration: none;
 	transition: 0.5s;
 	margin: 1rem;
-	border-radius: 1rem;
+	border-radius: 10px;
 	position: relative;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1114,7 +1114,7 @@ section.route-maps .route-card .background-gradient svg {
 	bottom: 22px;
 	padding: 5px 0;
 	background-color: var(--kunst-in-c-rood);
-	border-radius: 5px;
+	border-radius: 10px;
 	z-index: 3;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	transition: 0.3s;
@@ -2292,7 +2292,7 @@ input[type="file"] {
 .collection-header .image-wrapper img {
 	width: 100%;
 	height: 100%;
-	border-radius: 1em;
+	border-radius: 10px;
 	object-fit: cover;
 }
 
@@ -2433,7 +2433,7 @@ input[type="file"] {
 .collection-overview .collection-overview-wrap .image-wrapper img {
 	width: 100%;
 	height: 100%;
-	border-radius: 1em;
+	border-radius: 10px;
 	object-fit: cover;
 }
 
@@ -2444,7 +2444,7 @@ input[type="file"] {
 	position: absolute;
 	bottom: 0px;
 	padding: 20px;
-	border-radius: 0 0 1em 1em;
+	border-radius: 0 0 10px 10px;
 }
 
 .collection-overview .collection-overview-wrap .image-wrapper .dark-overlay .link-wrapper {
@@ -3289,8 +3289,8 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section-cards .cards-wrapper .card .image-wrapper .card-image {
 	width: 100%;
 	height: 100%;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	object-fit: cover;
 }
 
@@ -3302,6 +3302,8 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 	justify-content: space-between;
 	gap: 30px;
 	height: 100%;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .section-cards .cards-wrapper .card .content .card-text h3 {
