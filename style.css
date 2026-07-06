@@ -1543,7 +1543,30 @@ section.route-maps .route-card .background-gradient svg {
 		width: 100%;
 	}
 }
+/* ---------------------------------------------------------- ---- KAART HOMEPAGE -----------------------------------------------------------*/
+.kaart-homepage {
+    width: 100vw;
+    overflow: hidden;
+}
 
+.kaart-homepage img {
+    display: block;
+    width: 100%;
+    height: auto;
+	margin: 0 0 3em 0;
+}
+
+@media screen and (min-width: 680px) and (max-width: 900px) {    
+    .kaart-homepage img {
+        margin: 10em 0 3em 0;
+    }
+}
+
+@media (max-width: 680px) {
+	.kaart-homepage img {
+        margin: 2em 0 3em 0;
+    }
+}
 /* ---------------------------------------------------------- ---- START OF VR CSS -----------------------------------------------------------*/
 .virtual_container {
 	position: relative;
@@ -1753,7 +1776,7 @@ section.route-maps .route-card .background-gradient svg {
 .section-route-animatie {
 	position: relative;
 	height: 65vh;
-	margin-top: 10em;
+	margin-top: 2em;
 }
 
 .section-route-animatie svg {
