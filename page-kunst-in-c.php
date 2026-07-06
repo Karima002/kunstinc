@@ -211,30 +211,6 @@ $ontdek_kunstwerken_link = $ontdek_kunstwerken_group['ontdek_kunstwerken_link'];
 </section>
 
 
-
-<!--------------------->
-<!-- Virtual Reality -->
-<!--------------------->
-
-<?php
-$vr_group = get_field('vr_group');
-
-$vr_link = $vr_group['vr_knop'];
-?>
-
-<section class="virtual_container mouse-element" aria-labelledby="vr-title" aria-describedby="vr-description">
-  <img src="<?php echo esc_url($vr_group['vr_afbeelding_1']); ?>" alt="<?php echo esc_attr($vr_group['vr_kunstobject_1_alt_tekst']); ?>">
-  <img src="<?php echo esc_url($vr_group['vr_afbeelding_2']); ?>" alt="<?php echo esc_attr($vr_group['vr_kunstobject_2_alt_tekst']); ?>">
-  <h2 id="vr-title"><?php echo esc_html($vr_group['vr_titel']); ?></h2>
-  <p id="vr-description"><?php echo wp_kses_post($vr_group['vr_beschrijving']); ?></p>
-
-  <?php if(!empty($vr_link)) { ?>
-    <a href="<?php echo esc_url($vr_link['url']); ?>" aria-label="Meer informatie over de virtuele realiteit"> <?php echo esc_attr($vr_link['title']); ?> <i class="fa-solid fa-arrow-right"></i></a>
-  <?php } ?>
-
-  <img class="achtergrond_polygon" src="<?php echo esc_url($vr_group['vr_achtergrondafbeelding']); ?>" alt="<?php echo esc_attr($vr_group['vr_achtergrondafbeelding_alt']); ?>">
-</section>
-
 <!----------------->
 <!-- Route -------->
 <!----------------->
@@ -278,6 +254,33 @@ $route_link = $route_group['route_knop'];
     <?php endif; ?>
     </div>
   </div>
+</section>
+
+<section class="kaart-homepage">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kaart.png" alt="Kaart van Castricum met locaties van wandel- en fietsroutes">   
+</section>
+
+<!--------------------->
+<!-- Virtual Reality -->
+<!--------------------->
+
+<?php
+$vr_group = get_field('vr_group');
+
+$vr_link = $vr_group['vr_knop'];
+?>
+
+<section class="virtual_container mouse-element" aria-labelledby="vr-title" aria-describedby="vr-description">
+  <img src="<?php echo esc_url($vr_group['vr_afbeelding_1']); ?>" alt="<?php echo esc_attr($vr_group['vr_kunstobject_1_alt_tekst']); ?>">
+  <img src="<?php echo esc_url($vr_group['vr_afbeelding_2']); ?>" alt="<?php echo esc_attr($vr_group['vr_kunstobject_2_alt_tekst']); ?>">
+  <h2 id="vr-title"><?php echo esc_html($vr_group['vr_titel']); ?></h2>
+  <p id="vr-description"><?php echo wp_kses_post($vr_group['vr_beschrijving']); ?></p>
+
+  <?php if(!empty($vr_link)) { ?>
+    <a href="<?php echo esc_url($vr_link['url']); ?>" aria-label="Meer informatie over de virtuele realiteit"> <?php echo esc_attr($vr_link['title']); ?> <i class="fa-solid fa-arrow-right"></i></a>
+  <?php } ?>
+
+  <img class="achtergrond_polygon" src="<?php echo esc_url($vr_group['vr_achtergrondafbeelding']); ?>" alt="<?php echo esc_attr($vr_group['vr_achtergrondafbeelding_alt']); ?>">
 </section>
 
 <!----------------->
