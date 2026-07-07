@@ -98,7 +98,7 @@
             'container_class' => 'header-menu-class'
         ));
     ?>
-    <div>
+    <!-- <div>
       <label for="darkmode" class="darkmode" role="button" aria-label="darkmode button">
           <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@
           aria-pressed="false"
         />
           </label>
-    </div>
+    </div> -->
     <button class="hamburger" aria-label="Toggle menu">
       <span class="bar"></span>
       <span class="bar"></span>
