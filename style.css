@@ -4521,7 +4521,7 @@ footer .parent .colofonFooter .colofon-contact a {
 	width: 2.5rem;
 	height: 2.5rem;
 	border: 2px solid var(--kunst-in-c-wit);
-	border-radius: 100%;
+	border-radius: 10px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -4555,7 +4555,7 @@ footer .parent .colofonFooter .colofon-social-media a {
 	aspect-ratio: 1;
 	width: 2.5rem;
 	border: 2px solid var(--kunst-in-c-wit);
-	border-radius: 50%;
+	border-radius: 10px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -4592,7 +4592,7 @@ footer .parent .colofonFooter ul li a {
 	border: solid var(--kunst-in-c-wit) 2px;
 	padding: 0.7rem 2rem 0.7rem 1rem;
 	position: relative;
-	border-radius: 10rem;
+	border-radius: 10px;
 	width: fit-content;
 	transition: 0.2s;
 	display: flex;
@@ -4768,7 +4768,7 @@ footer .sub-footer ul li a {
 		width: 2.5rem;
 		height: 2.5rem;
 		border: 2px solid var(--kunst-in-c-wit);
-		border-radius: 100%;
+		border-radius: 10px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
@@ -4802,7 +4802,7 @@ footer .sub-footer ul li a {
 		aspect-ratio: 1;
 		width: 2.5rem;
 		border: 2px solid var(--kunst-in-c-wit);
-		border-radius: 50%;
+		border-radius: 10px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
@@ -4839,7 +4839,7 @@ footer .sub-footer ul li a {
 		border: solid var(--kunst-in-c-wit) 2px;
 		padding: 0.7rem 2rem 0.7rem 1rem;
 		position: relative;
-		border-radius: 10rem;
+		border-radius: 10px;
 		width: fit-content;
 		transition: 0.2s;
 		display: flex;
