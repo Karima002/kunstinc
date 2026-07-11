@@ -131,7 +131,7 @@ a:focus-visible {
 
 /* ---------------------------------------------------------- ---- Darkmode Button (lamp) -----------------------------------------------------------*/
 #lamp {
-	width: 80px;
+	/* width: 80px; */
 	height: 160px;
 	overflow: inherit;
 }
@@ -647,7 +647,7 @@ header nav ul {
 	padding: 0;
 	margin: 0;
 	padding: 1.5em 2em;
-	border-radius: 50px;
+	border-radius: 10px;
 	height: fit-content;
 	margin-right: 50px;
 	margin-top: -10px;
@@ -893,7 +893,7 @@ header nav .mobile-menu {
 	color: white;
 	min-width: 100%;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 10px;
 	border: 2px transparent solid;
 	transition: 0.3s;
 }
@@ -994,7 +994,7 @@ section.route-maps .route-card {
 	text-decoration: none;
 	transition: 0.5s;
 	margin: 1rem;
-	border-radius: 1rem;
+	border-radius: 10px;
 	position: relative;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1114,7 +1114,7 @@ section.route-maps .route-card .background-gradient svg {
 	bottom: 22px;
 	padding: 5px 0;
 	background-color: var(--kunst-in-c-rood);
-	border-radius: 5px;
+	border-radius: 10px;
 	z-index: 3;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	transition: 0.3s;
@@ -1224,7 +1224,7 @@ section.route-maps .route-card .background-gradient svg {
 .section-pageheader .pageheader-gradient .content-wrapper .col-right .content .button-wrapper .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -1300,7 +1300,7 @@ section.route-maps .route-card .background-gradient svg {
 	text-decoration: none;
 	border: solid var(--kunst-in-c-rood) 2px;
 	padding: 0.7rem 1rem;
-	border-radius: 10rem;
+	border-radius: 10px;
 	width: fit-content;
 	transition: 0.2s;
 	display: flex;
@@ -1332,7 +1332,7 @@ section.route-maps .route-card .background-gradient svg {
 }
 
 .section-pageheader.normal .pageheader-gradient .content-wrapper .col-right.gallery img {
-	border-radius: 5px;
+	border-radius: 10px;
 	object-fit: cover;
 }
 
@@ -1543,7 +1543,30 @@ section.route-maps .route-card .background-gradient svg {
 		width: 100%;
 	}
 }
+/* ---------------------------------------------------------- ---- KAART HOMEPAGE -----------------------------------------------------------*/
+.kaart-homepage {
+    width: 100vw;
+    overflow: hidden;
+}
 
+.kaart-homepage img {
+    display: block;
+    width: 100%;
+    height: auto;
+	margin: 0 0 3em 0;
+}
+
+@media screen and (min-width: 680px) and (max-width: 900px) {    
+    .kaart-homepage img {
+        margin: 10em 0 3em 0;
+    }
+}
+
+@media (max-width: 680px) {
+	.kaart-homepage img {
+        margin: 2em 0 3em 0;
+    }
+}
 /* ---------------------------------------------------------- ---- START OF VR CSS -----------------------------------------------------------*/
 .virtual_container {
 	position: relative;
@@ -1753,7 +1776,7 @@ section.route-maps .route-card .background-gradient svg {
 .section-route-animatie {
 	position: relative;
 	height: 65vh;
-	margin-top: 10em;
+	margin-top: 2em;
 }
 
 .section-route-animatie svg {
@@ -1881,7 +1904,7 @@ section.route-maps .route-card .background-gradient svg {
 .button-wrapper .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -2062,7 +2085,7 @@ section.route-maps .route-card .background-gradient svg {
 	width: 3.5rem;
 	height: 3.5rem;
 	border: 2.5px solid var(--kunst-in-c-rood);
-	border-radius: 50%;
+	border-radius: 10px;
 	background-color: rgba(255, 0, 0, 0);
 	text-decoration: none;
 	color: var(--kunst-in-c-rood);
@@ -2292,7 +2315,7 @@ input[type="file"] {
 .collection-header .image-wrapper img {
 	width: 100%;
 	height: 100%;
-	border-radius: 1em;
+	border-radius: 10px;
 	object-fit: cover;
 }
 
@@ -2303,7 +2326,7 @@ input[type="file"] {
 	position: absolute;
 	bottom: 4px;
 	padding: 20px;
-	border-radius: 0 0 1em 1em;
+	border-radius: 0 0 10px 10px;
 }
 
 .collection-header .image-wrapper .dark-overlay .link-wrapper {
@@ -2433,7 +2456,7 @@ input[type="file"] {
 .collection-overview .collection-overview-wrap .image-wrapper img {
 	width: 100%;
 	height: 100%;
-	border-radius: 1em;
+	border-radius: 10px;
 	object-fit: cover;
 }
 
@@ -2444,7 +2467,7 @@ input[type="file"] {
 	position: absolute;
 	bottom: 0px;
 	padding: 20px;
-	border-radius: 0 0 1em 1em;
+	border-radius: 0 0 10px 10px;
 }
 
 .collection-overview .collection-overview-wrap .image-wrapper .dark-overlay .link-wrapper {
@@ -3289,8 +3312,8 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section-cards .cards-wrapper .card .image-wrapper .card-image {
 	width: 100%;
 	height: 100%;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	object-fit: cover;
 }
 
@@ -3302,6 +3325,8 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 	justify-content: space-between;
 	gap: 30px;
 	height: 100%;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .section-cards .cards-wrapper .card .content .card-text h3 {
@@ -3346,7 +3371,7 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section-cards .cards-wrapper .card .card-footer .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -3478,7 +3503,7 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section .section_pin #text-wrapper a.btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -4496,7 +4521,7 @@ footer .parent .colofonFooter .colofon-contact a {
 	width: 2.5rem;
 	height: 2.5rem;
 	border: 2px solid var(--kunst-in-c-wit);
-	border-radius: 100%;
+	border-radius: 10px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -4530,7 +4555,7 @@ footer .parent .colofonFooter .colofon-social-media a {
 	aspect-ratio: 1;
 	width: 2.5rem;
 	border: 2px solid var(--kunst-in-c-wit);
-	border-radius: 50%;
+	border-radius: 10px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -4567,7 +4592,7 @@ footer .parent .colofonFooter ul li a {
 	border: solid var(--kunst-in-c-wit) 2px;
 	padding: 0.7rem 2rem 0.7rem 1rem;
 	position: relative;
-	border-radius: 10rem;
+	border-radius: 10px;
 	width: fit-content;
 	transition: 0.2s;
 	display: flex;
@@ -4743,7 +4768,7 @@ footer .sub-footer ul li a {
 		width: 2.5rem;
 		height: 2.5rem;
 		border: 2px solid var(--kunst-in-c-wit);
-		border-radius: 100%;
+		border-radius: 10px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
@@ -4777,7 +4802,7 @@ footer .sub-footer ul li a {
 		aspect-ratio: 1;
 		width: 2.5rem;
 		border: 2px solid var(--kunst-in-c-wit);
-		border-radius: 50%;
+		border-radius: 10px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
@@ -4814,7 +4839,7 @@ footer .sub-footer ul li a {
 		border: solid var(--kunst-in-c-wit) 2px;
 		padding: 0.7rem 2rem 0.7rem 1rem;
 		position: relative;
-		border-radius: 10rem;
+		border-radius: 10px;
 		width: fit-content;
 		transition: 0.2s;
 		display: flex;
