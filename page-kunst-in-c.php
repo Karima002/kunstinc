@@ -375,7 +375,7 @@ $vr_link = $vr_group['vr_knop'];
 
 </section>
 
-<a href="/steun-ons">
+<!-- <a href="/steun-ons">
   <div class="help-btn-wrapper">
     <div class="col-left">
       <i class="fa-solid fa-heart fa-2x"></i>
@@ -384,6 +384,6 @@ $vr_link = $vr_group['vr_knop'];
       <p>Steun ons!</p>
     </div>
   </div>
-</a>
+</a> -->
 
 <?php get_footer(); ?>
