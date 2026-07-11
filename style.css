@@ -1224,7 +1224,7 @@ section.route-maps .route-card .background-gradient svg {
 .section-pageheader .pageheader-gradient .content-wrapper .col-right .content .button-wrapper .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -1300,7 +1300,7 @@ section.route-maps .route-card .background-gradient svg {
 	text-decoration: none;
 	border: solid var(--kunst-in-c-rood) 2px;
 	padding: 0.7rem 1rem;
-	border-radius: 10rem;
+	border-radius: 10px;
 	width: fit-content;
 	transition: 0.2s;
 	display: flex;
@@ -1904,7 +1904,7 @@ section.route-maps .route-card .background-gradient svg {
 .button-wrapper .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -2085,7 +2085,7 @@ section.route-maps .route-card .background-gradient svg {
 	width: 3.5rem;
 	height: 3.5rem;
 	border: 2.5px solid var(--kunst-in-c-rood);
-	border-radius: 50%;
+	border-radius: 10px;
 	background-color: rgba(255, 0, 0, 0);
 	text-decoration: none;
 	color: var(--kunst-in-c-rood);
@@ -3371,7 +3371,7 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section-cards .cards-wrapper .card .card-footer .btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
@@ -3503,7 +3503,7 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 .section .section_pin #text-wrapper a.btn {
 	background-color: var(--kunst-in-c-rood);
 	padding: 0.7rem 1rem;
-	border-radius: 2rem;
+	border-radius: 10px;
 	border: 2px solid var(--kunst-in-c-rood);
 	color: var(--white-font-color);
 	font-size: 16px;
