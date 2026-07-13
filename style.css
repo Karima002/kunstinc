@@ -4693,16 +4693,16 @@ footer .sub-footer ul li a {
 		position: relative;
 		bottom: 0;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		/* grid-template-columns: repeat(2, 1fr); */
 		grid-template-rows: 1fr;
 		grid-column-gap: 10px;
 		grid-row-gap: 0px;
-		margin: 0 1rem;
+		margin: 0;
 	}
 
 	footer .parent .imgFooter {
 		grid-area: 0.25;
-		display: block;
+		/* display: block; */
 	}
 
 	footer .parent .imgFooter #text-4 {
