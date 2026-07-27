@@ -162,7 +162,7 @@ $alle_kunstwerken_knop = $alle_kunstwerken_group['alle_kunstwerken_knop'];
 
 </section>
 
-
+<!-- 
 <a href="/steun-ons">
     <div class="help-btn-wrapper">
         <div class="col-left">
@@ -172,7 +172,7 @@ $alle_kunstwerken_knop = $alle_kunstwerken_group['alle_kunstwerken_knop'];
             <p>Steun ons!</p>
         </div>
     </div>
-</a>
+</a> -->
 
 
 <?php get_footer(); ?>

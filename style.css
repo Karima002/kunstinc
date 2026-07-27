@@ -4483,7 +4483,7 @@ footer .parent {
 	grid-template-columns: 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 0px;
-	margin: 0 1rem;
+	margin: 0;
 }
 
 footer .parent .imgFooter {
@@ -4598,8 +4598,8 @@ footer .parent .colofonFooter ul li a {
 	display: flex;
 	align-items: center;
 }
-/* 
-footer .parent .colofonFooter ul li a::after {
+
+/* footer .parent .colofonFooter ul li a::after {
 	content: "\f061";
 	position: absolute;
 	right: 12px;
@@ -4837,7 +4837,7 @@ footer .sub-footer ul li a {
 		color: white;
 		text-decoration: none;
 		border: solid var(--kunst-in-c-wit) 2px;
-		padding: 0.7rem 2rem 0.7rem 1rem;
+		padding: 0.7rem 1rem 0.7rem 1rem;
 		position: relative;
 		border-radius: 10px;
 		width: fit-content;
@@ -4851,14 +4851,14 @@ footer .sub-footer ul li a {
 			 */
 	}
 
-	footer .parent .colofonFooter ul li a::after {
+	/* footer .parent .colofonFooter ul li a::after {
 		content: "\f061";
 		position: absolute;
 		right: 12px;
 		font-family: 'fontawesome';
 		color: white;
 		transition: 0.5s;
-	}
+	} */
 
 	footer .parent .colofonFooter ul li a:hover::after {
 		color: var(--kunst-in-c-rood);

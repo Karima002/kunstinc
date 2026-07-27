@@ -200,7 +200,7 @@ if ($art_query->have_posts()) {
 <!----------------->
 
 </section>
-<a href="/steun-ons">
+<!-- <a href="/steun-ons">
     <div class="help-btn-wrapper">
         <div class="col-left">
             <i class="fa-solid fa-heart fa-2x"></i>
@@ -209,6 +209,6 @@ if ($art_query->have_posts()) {
             <p>Steun ons!</p>
         </div>
     </div>
-</a>
+</a> -->
 
 <?php get_footer(); ?>
