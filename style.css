@@ -4598,7 +4598,7 @@ footer .parent .colofonFooter ul li a {
 	display: flex;
 	align-items: center;
 }
-
+/* 
 footer .parent .colofonFooter ul li a::after {
 	content: "\f061";
 	position: absolute;
@@ -4606,7 +4606,7 @@ footer .parent .colofonFooter ul li a::after {
 	font-family: 'fontawesome';
 	color: white;
 	transition: 0.5s;
-}
+} */
 
 footer .parent .colofonFooter ul li a:hover::after {
 	color: var(--kunst-in-c-rood);
