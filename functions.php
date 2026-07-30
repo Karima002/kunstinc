@@ -29,6 +29,7 @@ function kunstinc_setup(){
 			$knop_detail = get_field('map_knop_detailpagina');
 			$knop_route = get_field('map_knop_route');
 			$description = get_field('map-omschrijving');
+            $is_rob_sweere = get_field('is_rob_sweere');
             $title = get_the_title();
             $excerpt = get_the_excerpt();
             if ($latitude && $longitude) {
@@ -41,6 +42,7 @@ function kunstinc_setup(){
 					'knop_detail' => $knop_detail['url'],
 					'knop_route' => $knop_route,
 					'description' => $description,
+                    'is_rob_sweere' => $is_rob_sweere,
                 );
             }
         endwhile;
@@ -68,6 +70,7 @@ function kunstinc_setup(){
 
     wp_localize_script('leaflet-map', 'kunstwerkenData', $kunstwerken_data);
     wp_localize_script('leaflet-map', 'uitgelichtDate', $uitgelichten_events);
+    wp_localize_script('leaflet-map', 'themeUrl', get_template_directory_uri());
 }
 add_action('wp_enqueue_scripts', 'kunstinc_setup');
 
@@ -497,6 +500,56 @@ add_action( 'acf/include_fields', function() {
 	'description' => '',
 	'show_in_rest' => 0,
 ) );
+} );
+
+add_action( 'acf/init', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+		'key' => 'group_robsweere_icon',
+		'title' => 'Kunstwerk icoon instellingen',
+		'fields' => array(
+			array(
+				'key' => 'field_is_rob_sweere',
+				'label' => 'Rob Sweere icoon',
+				'name' => 'is_rob_sweere',
+				'type' => 'true_false',
+				'instructions' => 'Vink aan als dit kunstwerk het Rob Sweere-icoon op de kaart moet krijgen.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 0,
+				'ui' => 1,
+				'ui_on_text' => 'Aan',
+				'ui_off_text' => 'Uit',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'kunstwerken',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	) );
 } );
 
 function remove_media_button() {

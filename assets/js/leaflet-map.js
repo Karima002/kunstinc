@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         popupAnchor: [7, -16],
     });
 
+    const robSweereIcon = L.divIcon({
+        className: "marker marker-robsweere",
+        html: `<img src="${themeUrl}/assets/images/robsweereicon.svg" alt="Rob Sweere icoon" width="40" height="40" />`,
+        iconSize: [40, 40],
+        iconAnchor: [12, 24],
+        popupAnchor: [7, -16],
+    });
+
+
     let currentMarkerIndex = 0;
     const markers = [];
     const popup = document.querySelector('.route-detail-window');
@@ -64,9 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const knop_route = kunstwerk.knop_route;
         const knop_detail = kunstwerk.knop_detail;
         // const id = kunstwerk.title;
+        const isRobSweere = kunstwerk.is_rob_sweere;
+        const markerIcon = isRobSweere ? robSweereIcon : newIcon;
 
         const marker = L.marker([lat, lng], {
-            icon: newIcon,
+            icon: markerIcon,
             alt: description,
         }).addTo(map);
 
