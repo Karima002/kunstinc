@@ -264,7 +264,7 @@ $route_link = $route_group['route_knop'];
 <!-- Virtual Reality -->
 <!--------------------->
 
-<?php
+<!-- <?php
 $vr_group = get_field('vr_group');
 
 $vr_link = $vr_group['vr_knop'];
@@ -281,7 +281,7 @@ $vr_link = $vr_group['vr_knop'];
   <?php } ?>
 
   <img class="achtergrond_polygon" src="<?php echo esc_url($vr_group['vr_achtergrondafbeelding']); ?>" alt="<?php echo esc_attr($vr_group['vr_achtergrondafbeelding_alt']); ?>">
-</section>
+</section> -->
 
 <!----------------->
 <!-- uitgelicht -------->
