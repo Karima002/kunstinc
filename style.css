@@ -4897,7 +4897,7 @@ footer .sub-footer ul li a {
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		width: clamp(25%, 30%, 30%);
+		width: 20em;
 		object-fit: contain;
 	}
 
