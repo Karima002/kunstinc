@@ -193,15 +193,14 @@ if ($art_query->have_posts()) {
     echo '<p>Geen kunstwerken gevonden!</p>';
 }
 ?>
+</section>
 
 
 <!----------------->
 <!-- Steun ons knop -->
 <!----------------->
 
-</section>
-<!-- <a href="/steun-ons">
-    <div class="help-btn-wrapper">
+<!--  <div class="help-btn-wrapper">
         <div class="col-left">
             <i class="fa-solid fa-heart fa-2x"></i>
         </div>
