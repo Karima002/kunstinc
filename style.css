@@ -4823,6 +4823,9 @@ footer .sub-footer ul li a {
 	}
 
 	footer .parent .colofonFooter ul {
+		display: flex;
+		flex-direction: space-between;
+		gap: 1.5em;
 		padding: 0;
 	}
 
