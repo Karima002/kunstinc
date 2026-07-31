@@ -4649,10 +4649,9 @@ footer .sub-footer {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-	color: var(--kunst-in-c-rood);
+	background-color: var(--kunst-in-c-rood);
 	font-weight: 500;
 	justify-content: center;
-	background-color: var(--kunst-in-c-wit);
 	padding-bottom: 15px;
 }
 
@@ -4664,6 +4663,8 @@ footer .sub-footer h6 {
 
 footer .sub-footer p {
 	text-align: center;
+	color: var(--kunst-in-c-wit);
+	font-size: 0.7rem;
 }
 
 footer .sub-footer ul {
@@ -4681,7 +4682,8 @@ footer .sub-footer ul li {
 footer .sub-footer ul li a {
 	text-decoration: underline;
 	font-size: 1em;
-	color: var(--kunst-in-c-rood);
+	color: var(--kunst-in-c-wit);
+	font-size: 0.7rem;
 }
 
 @media (min-width: 600px) {
@@ -4905,11 +4907,12 @@ footer .sub-footer ul li a {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
-		color: var(--kunst-in-c-rood);
+		background-color: var(--kunst-in-c-rood);
 		font-weight: 500;
 		justify-content: center;
 		align-items: center;
 		padding-block: 0.5rem;
+		max-width: 100%;
 	}
 
 	footer .sub-footer .textwidget {
@@ -4926,6 +4929,7 @@ footer .sub-footer ul li a {
 		font-size: 0.7rem;
 		margin: 0;
 		font-weight: 400;
+		color: var(--kunst-in-c-wit);
 	}
 
 	footer .sub-footer .textwidget ul {
@@ -4942,7 +4946,7 @@ footer .sub-footer ul li a {
 	footer .sub-footer .textwidget ul li a {
 		text-decoration: underline;
 		font-size: 0.7rem;
-		color: var(--kunst-in-c-rood);
+		color: var(--kunst-in-c-wit);
 	}
 }
 
