@@ -161,8 +161,6 @@ $alle_kunstwerken_knop = $alle_kunstwerken_group['alle_kunstwerken_knop'];
     ?>
 
 </section>
-
-
 <!-- <a href="/steun-ons">
     <div class="help-btn-wrapper">
         <div class="col-left">
