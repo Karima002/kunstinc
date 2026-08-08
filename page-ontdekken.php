@@ -7,9 +7,9 @@ get_header();
 
 // SVGs ophalen uit assets map
 $svgs = [
+  get_template_directory() . '/assets/images/robsweere.svg',
     get_template_directory() . '/assets/images/fietsroute.svg',
     get_template_directory() . '/assets/images/wandelroute.svg',
-    get_template_directory() . '/assets/images/robsweere.svg',
 
 ];
 
