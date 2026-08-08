@@ -851,7 +851,7 @@ header nav .mobile-menu {
 	width: 100%;
 	border-radius: 10px;
 	object-fit: cover;
-	height: 100%;
+	height: 13em;
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
@@ -892,6 +892,7 @@ header nav .mobile-menu {
 	text-decoration: none;
 	color: white;
 	min-width: 100%;
+	max-height: 4em;
 	text-align: center;
 	border-radius: 10px;
 	border: 2px transparent solid;
@@ -4984,6 +4985,12 @@ footer .sub-footer ul li a {
 
 	.route-detail-window section {
 		width: 100%;
+		display: flex;
+    	flex-direction: column;
+	}
+	
+	.route-detail-window section p {
+		margin-bottom: .5rem;
 	}
 
 	.route-detail-window nav {
