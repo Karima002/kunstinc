@@ -7,14 +7,16 @@ get_header();
 
 // SVGs ophalen uit assets map
 $svgs = [
+  get_template_directory() . '/assets/images/robsweere.svg',
     get_template_directory() . '/assets/images/fietsroute.svg',
     get_template_directory() . '/assets/images/wandelroute.svg',
+
 ];
 
 // Query om de berichten op te halen
 $args = array(
     'post_type' => 'routes',
-    'posts_per_page' => 2,
+    'posts_per_page' => 3,
 );
 $routes_query = new WP_Query($args);
 ?>
