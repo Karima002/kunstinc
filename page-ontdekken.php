@@ -9,12 +9,14 @@ get_header();
 $svgs = [
     get_template_directory() . '/assets/images/fietsroute.svg',
     get_template_directory() . '/assets/images/wandelroute.svg',
+    get_template_directory() . '/assets/images/robsweere.svg',
+
 ];
 
 // Query om de berichten op te halen
 $args = array(
     'post_type' => 'routes',
-    'posts_per_page' => 2,
+    'posts_per_page' => 3,
 );
 $routes_query = new WP_Query($args);
 ?>
