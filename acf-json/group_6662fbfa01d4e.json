@@ -224,7 +224,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Klik op de checkbox om het Google formulier weer te geven",
+            "message": "Checkbox om het Google formulier weer te geven",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -256,5 +256,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1787048257
+    "modified": 1787048823
 }
