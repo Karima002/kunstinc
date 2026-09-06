@@ -56,8 +56,8 @@ get_header();
     $steun_cards_group_sub2 = $steun_cards_group['steun-ons-card2-group'];
     $steun_cards_group_sub3 = $steun_cards_group['steun-ons-card3-group'];
     
-    $steun_card1_link1 = $steun_cards_group_sub1['steun-ons-card-link1'];
-    $steun_card1_link2 = $steun_cards_group_sub1['steun-ons-card-link2'];
+    $steun_card1_link1 = $steun_cards_group_sub1['steun-ons-card-link1'] ?? '';
+    $steun_card1_link2 = $steun_cards_group_sub1['steun-ons-card-link2'] ?? '';
 
     $steun_card2_link = $steun_cards_group_sub2['steun-ons-card-link3'];
     $steun_card3_link = $steun_cards_group_sub3['steun-ons-card-link4'];    
