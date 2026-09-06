@@ -3148,6 +3148,11 @@ html:has([value="darkmode"]:checked) .section-event-detail:after {
 	width: 100%;
 }
 
+@media (min-width: 769px) {
+	.google-form {
+		padding-left: 7.8em;
+	}
+}
 @media only screen and (max-width: 425px) {
 	.section-event-detail {
 		padding-top: 150px;
