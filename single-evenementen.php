@@ -54,7 +54,7 @@ if ( function_exists('yoast_breadcrumb') ) {
 </section>
 
 <?php if (get_field('formulier_aan')) : ?>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeylNF4CBII-BzklTwuP4-VqTtbgM1lRtHw4GehvwfzaqhpQw/viewform?embedded=true" width="640" height="1285" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
+  <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeylNF4CBII-BzklTwuP4-VqTtbgM1lRtHw4GehvwfzaqhpQw/viewform?embedded=true" width="640" height="1285" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
 <?php endif; ?>
 
 <!-- <a href="/steun-ons">
