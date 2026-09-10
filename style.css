@@ -873,16 +873,30 @@ header nav .mobile-menu {
 
 .route-detail-window section div {
 	display: contents;
+	@media (max-width: 826px) {
+		display: flex;
+		flex-direction: row;
+		column-gap: .5em;
+		justify-content: center;
+	}
 }
 
 #popup-btn1 {
     grid-column: 2;
     grid-row: 3;
+	@media (max-width: 826px) {
+		min-width: 45%;
+		max-height: 3em;
+	}
 }
 
 #popup-btn2 {
     grid-column: 1;
     grid-row: 3;
+	@media (max-width: 826px) {
+		min-width: 45%;
+		max-height: 3em;
+	}
 }
 
 .route-detail-window section div a {
@@ -897,6 +911,11 @@ header nav .mobile-menu {
 	border-radius: 10px;
 	border: 2px transparent solid;
 	transition: 0.3s;
+	@media (max-width: 826px) {
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+	}
 }
 
 .route-detail-window section .popup-btn1 {
