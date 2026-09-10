@@ -688,6 +688,7 @@ header nav ul a:hover {
 
 header nav .darkmode {
 	position: absolute;
+	display: none;
 	right: 0;
 	top: 0;
 	z-index: 9;
@@ -5082,7 +5083,7 @@ footer .sub-footer ul li a {
 	header nav {
 		display: flex;
 		transition: 0.5s;
-		left: 58%;
+		left: 50%;
 	}
 
 	header.active nav {
