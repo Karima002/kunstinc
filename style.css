@@ -5008,7 +5008,7 @@ footer .sub-footer ul li a {
 	}
 	
 	.route-detail-window section p {
-		margin-bottom: .5rem;
+		margin-bottom: 0;
 	}
 
 	.route-detail-window nav {
