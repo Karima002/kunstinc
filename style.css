@@ -688,6 +688,7 @@ header nav ul a:hover {
 
 header nav .darkmode {
 	position: absolute;
+	display: none;
 	right: 0;
 	top: 0;
 	z-index: 9;
@@ -873,16 +874,30 @@ header nav .mobile-menu {
 
 .route-detail-window section div {
 	display: contents;
+	@media (max-width: 826px) {
+		display: flex;
+		flex-direction: row;
+		column-gap: .5em;
+		justify-content: center;
+	}
 }
 
 #popup-btn1 {
     grid-column: 2;
     grid-row: 3;
+	@media (max-width: 826px) {
+		min-width: 45%;
+		max-height: 3em;
+	}
 }
 
 #popup-btn2 {
     grid-column: 1;
     grid-row: 3;
+	@media (max-width: 826px) {
+		min-width: 45%;
+		max-height: 3em;
+	}
 }
 
 .route-detail-window section div a {
@@ -897,6 +912,11 @@ header nav .mobile-menu {
 	border-radius: 10px;
 	border: 2px transparent solid;
 	transition: 0.3s;
+	@media (max-width: 826px) {
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+	}
 }
 
 .route-detail-window section .popup-btn1 {
@@ -5008,7 +5028,7 @@ footer .sub-footer ul li a {
 	}
 	
 	.route-detail-window section p {
-		margin-bottom: 0;
+		margin-bottom: .3em;
 	}
 
 	.route-detail-window nav {
@@ -5063,7 +5083,7 @@ footer .sub-footer ul li a {
 	header nav {
 		display: flex;
 		transition: 0.5s;
-		left: 58%;
+		left: 50%;
 	}
 
 	header.active nav {
@@ -5082,7 +5102,7 @@ footer .sub-footer ul li a {
 
 	header nav .hamburger {
 		display: flex;
-		margin-right: 70px;
+		margin-right: 35px;
 		margin-top: -5px;
 	}
 
