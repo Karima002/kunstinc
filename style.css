@@ -5061,17 +5061,15 @@ footer .sub-footer ul li a {
 	}
 
 	header nav {
+		display: flex;
 		transition: 0.5s;
+		left: 58%;
 	}
 
 	header.active nav {
 		padding: 0;
 		background-color: var(--header-color);
 		border-bottom: 1px solid #ccc;
-	}
-
-	header nav {
-		display: flex;
 	}
 
 	header nav .logo {
