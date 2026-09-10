@@ -98,9 +98,9 @@
             'container_class' => 'header-menu-class'
         ));
     ?>
-    <!-- <div>
+    <div>
       <label for="darkmode" class="darkmode" role="button" aria-label="darkmode button">
-          <svg
+          <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           width="49"
           height="186.99"
@@ -150,7 +150,7 @@
               stroke="#000"
               stroke-width="2"
             />
-          </g></svg> 
+          </g></svg>  -->
           <input
           id="darkmode"
           type="checkbox"
@@ -160,7 +160,7 @@
           aria-pressed="false"
         />
           </label>
-    </div> -->
+    </div>
     <button class="hamburger" aria-label="Toggle menu">
       <span class="bar"></span>
       <span class="bar"></span>
