@@ -4515,6 +4515,10 @@ footer {
 	background-color: var(--kunst-in-c-wit);
 }
 
+footer a {
+	color: var(--kunst-in-c-wit);
+}
+
 footer .parent {
 	position: relative;
 	bottom: 0;
