@@ -5564,3 +5564,30 @@ html:has([value="darkmode"]:checked) footer .sub-footer {
 		color: var(--white-font-color);
 	}
 }
+
+
+/* Rob Sweere */
+.robsweere-header {
+	padding-top: 8em;
+}
+
+.robsweere-article-text {
+	padding-top: 10em;
+}
+
+.robsweere-nav {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.robsweere-section {
+	padding-left: 2em;
+}
+
+.robsweere-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
