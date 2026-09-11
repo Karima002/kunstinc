@@ -5567,8 +5567,16 @@ html:has([value="darkmode"]:checked) footer .sub-footer {
 
 
 /* Rob Sweere */
+
+.robsweere-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 5em;
+}
+
 .robsweere-header {
 	padding-top: 8em;
+	position: relative;
 }
 
 .robsweere-article-text {
@@ -5581,18 +5589,45 @@ html:has([value="darkmode"]:checked) footer .sub-footer {
 }
 
 .robsweere-section {
-	padding-left: 2em;
+	padding: 0 1.5em 0 2em;
+	grid-column: 1 / 3;
+	@media (min-width: 1170px) {
+	grid-column: 2 / 3;
+	}
+}
+
+.robsweere-icon {
+	display: none;
+	@media (min-width: 1170px) {
+		display: block;
+		grid-column: 1 / 2;
+		position: absolute;
+		top: 7em;
+		left: 0;
+		padding: 1em;
+	}
 }
 
 .robsweere-nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;	
+}
+
+.robsweere-nav a {
+	color: #646458;
+	&:hover {	
+		color: var(--kunst-in-c-rood);
+	}
 }
 
 .robsweere-header h1 {
-	text-align: center;
 	font-family: "Jura", sans-serif;
 	color: #646458;
+	padding-bottom: 1em;
+	text-align: center;
+	@media (min-width: 1170px) {
+		text-align: left;
+	}
 }
