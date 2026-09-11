@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
 
 <main class="robsweere-main">
-    <img class="robsweere-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/robsweereicon.svg" alt="Logo">
+    <img class="robsweere-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/robsweereicon.svg" alt="Logo" height="487" width="500">
 
     <section class="robsweere-section">
             <header class="robsweere-header">
