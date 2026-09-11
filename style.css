@@ -5591,3 +5591,8 @@ html:has([value="darkmode"]:checked) footer .sub-footer {
 	align-items: center;
 }
 
+.robsweere-header h1 {
+	text-align: center;
+	font-family: "Jura", sans-serif;
+	color: #646458;
+}
