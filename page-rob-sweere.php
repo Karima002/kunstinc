@@ -4,7 +4,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
 
-<main>
+<main class="robsweere-main">
+    <img class="robsweere-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/robsweereicon.svg" alt="Logo">
+
     <section class="robsweere-section">
             <header class="robsweere-header">
                 <h1>Rob Sweere</h1>
@@ -12,7 +14,7 @@
 
             <article class="robsweere-article">
                 <p class="robsweere-article-text">
-                    Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere 
+                    Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere  Rob Sweere
                 </p>
 
                 <nav class="robsweere-nav">
